@@ -173,11 +173,29 @@ a:hover {
     border-bottom: var(--box-shadow) solid 2px;
 }
 
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
 
+.complete {
+    background-color: var(--complete-color);
+    color: var(--light-text-color);
+    width: 80%;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
 
-
-
-
+.incomplete {
+    background-color: var(--incomplete-color);
+    color: var(--dark-text-color);
+    width: 80%;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
 
 
 
@@ -187,7 +205,7 @@ a:hover {
 
 footer {
     background-color: var(--primary-color);
-    height: 100px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,6 +215,7 @@ footer {
 footer p {
     color: var(--light-text-color);
     padding: 5px;
+    font-size: small;
 }
 
 #lastModified {
