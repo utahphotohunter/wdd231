@@ -173,28 +173,29 @@ a:hover {
     border-bottom: var(--box-shadow) solid 2px;
 }
 
-.courses {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+.course-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.course-list ul li {
+    width: 80%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
 
 .complete {
     background-color: var(--complete-color);
     color: var(--light-text-color);
-    width: 80%;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
 .incomplete {
     background-color: var(--incomplete-color);
     color: var(--dark-text-color);
-    width: 80%;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
 
