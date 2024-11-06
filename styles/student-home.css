@@ -1,0 +1,10 @@
+/* style sheet for student home page */
+
+/* global */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
