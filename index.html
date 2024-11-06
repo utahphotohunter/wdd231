@@ -16,25 +16,85 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1>Mitchel Hunter</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://utahphotohunter.github.io/wdd231/chamber/index.html">Chamber</a></li>
-                <li><a href="https://github.com/utahphotohunter">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/mitchel-hunter-447245254/">LinkedIn</a></li>
-            </ul>
-        </nav>
-        
-
+        <section class="desktop-menu">
+            <div class="container">
+                <!-- <img src="" alt=""> profile img -->
+                <h1 class="primary-text">Mitchel Hunter</h1>
+            </div>
+            <nav class="container">
+                <ul>
+                    <li id="home-dt" class="current"><a href="#">Home</a></li>
+                    <li id="chamber-dt"><a href="https://utahphotohunter.github.io/wdd231/chamber/index.html">Chamber</a></li>
+                    <li id="github-dt"><a href="https://github.com/utahphotohunter">GitHub Profile</a></li>
+                    <li id="linkedin-dt"><a href="https://www.linkedin.com/in/mitchel-hunter-447245254/">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="mobile-menu">
+            <div class="container">
+                <!-- <img src="" alt=""> profile img -->
+                 <h1 class="primary-text">Mitchel Hunter</h1>
+                 <div class="nav-icon container">
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                 </div>
+                 <div class="mobile-nav">
+                    <nav>
+                        <ul>
+                            <li id="home-mobile" class="current"><a href="#">Home</a></li>
+                            <li id="chamber-mobile"><a href="https://utahphotohunter.github.io/wdd231/chamber/index.html">Chamber</a></li>
+                            <li id="github-mobile"><a href="https://github.com/utahphotohunter">GitHub Profile</a></li>
+                            <li id="linkedin-mobile"><a href="https://www.linkedin.com/in/mitchel-hunter-447245254/">LinkedIn</a></li>
+                        </ul>
+                    </nav>
+                 </div>
+            </div>
+        </section>
     </header>
     <main>
-
+        <section>
+            <article class="info-card">
+                <div class="container card-header">
+                    <h2 class="secondary-text">Course Work</h2>
+                </div>
+                <div class="container">
+                    <!-- place holder text -->
+                </div>
+            </article>
+            <article class="info-card">
+                <div class="container card-header">
+                    <h2 class="secondary-text">Utah, United States</h2>
+                </div>
+                <div class="container">
+                    <!-- <figure>
+                        <img src="" alt="">
+                        <figcaption></figcaption>
+                    </figure> -->
+                </div>
+            </article>
+        </section>
+        <section class="info-card">
+            <div class="container card-header">
+                <h2 class="secondary-text">Web and Computer Programming Certificate</h2>
+            </div>
+            <div class="container">
+                <ul>
+                    <li id="course-all" class="btn">All</li>
+                    <li id="course-cse" class="btn">CSE</li>
+                    <li id="course-wdd" class="btn">WDD</li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul></ul>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="container">
+            <p>&copy;<span id="currentyear"></span> | Mitchel Hunter | United States</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 </html>
