@@ -11,7 +11,6 @@
     --incomplete-color: #a3a3a3;
     --light-text-color: white;
     --dark-text-color: black;
-    --accent-text: yellow;
     
 }
 
@@ -185,6 +184,11 @@ a:hover {
     border-bottom: var(--box-shadow) solid 2px;
 }
 
+.courses-nav li:hover {
+    background-color: var(--hover-color);
+    text-decoration: underline;
+}
+
 .course-list ul {
     display: flex;
     flex-direction: column;
@@ -229,8 +233,4 @@ footer p {
     color: var(--light-text-color);
     padding: 5px;
     font-size: small;
-}
-
-#lastModified {
-    color: var(--accent-text);
 }
