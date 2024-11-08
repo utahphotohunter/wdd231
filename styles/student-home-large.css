@@ -1,6 +1,28 @@
 /* style sheet for student home page desktop view*/
 
+/* variables */
+
+:root {
+    --primary-color: #164e70;
+    --hover-color: #2887c2;
+    --box-shadow: #53535390;
+    --nav-color: black;
+    --complete-color: #662f1f;
+    --incomplete-color: #a3a3a3;
+    --light-text-color: white;
+    --dark-text-color: black;
+    --accent-text: yellow;
+
+}
+
 @media (min-width: 820px) {
+
+/* global */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* header */
@@ -24,11 +46,44 @@
     height: 100px;
 }
 
+.desktop-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-nav ul li {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+.desktop-nav ul li:hover {
+    background-color: var(--hover-color);
+}
+
+.desktop-nav ul li a {
+    color: var(--light-text-color);
+}
+
+/* main */
+
+/* coursework and country section */
+
+.course-country {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.coursework {
+    grid-column: 1 / 3;
+}
+
+/* courses section */
 
 
-
-
-
-
+.course-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 }
