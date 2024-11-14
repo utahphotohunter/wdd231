@@ -46,3 +46,4 @@ function displayProphets(prophets) {
 }
 
 getProphetData();
+
