@@ -1,0 +1,48 @@
+/* mobile css for prophets webpage */
+
+/* variables */
+
+:root {
+    --card-background-color: #b9b9cc;
+    --card-border-color: #525298;
+    --primary-text-color: #4d4d96;
+}
+
+@media (min-width: 800px) {
+
+/* content */
+
+/* homepage */
+
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+@media (max-width: 950px) {
+    #cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.prophet-card {
+    background-color: var(--card-background-color);
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.prophet-card img {
+    height: 250px;
+}
+
+
+
+
+}
