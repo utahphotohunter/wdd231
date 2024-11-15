@@ -1,0 +1,158 @@
+/* css stylesheet for chamber of commerce website */
+
+
+/* variables */
+
+:root {
+    --primary-color: #D4BDAC;
+    --background-color: #FFF1DB;
+    --accent-color: #88C273;
+    --text-color: #536493;
+}
+
+
+/* global */
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+
+/* utilities */
+
+.container {
+    padding: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    /* button styling */
+}
+
+.primary-text {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.secondary-text {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+
+/* header and footer */
+
+/* header */
+
+.desktop-menu {
+    display: none;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 200px;
+}
+
+.mobile-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: red solid 2px;
+}
+
+.mobile-menu-content {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: blue solid 2px;
+}
+
+.logo-content {
+    height: 100%;
+    display: flex;
+    border: pink solid 2px;
+}
+
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.moon-toggle-icons {
+    display: flex;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+    border: purple solid 2px;
+
+}
+
+.moon {
+    height: 100%;
+}
+
+.moon img {
+    height: 100%;
+}
+
+.mobile-menu-toggle {
+    border: blue solid 2px;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-bars {
+    padding: 5px;
+    background-color: var(--text-color);
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+.mobile-menu-nav {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin: 0 auto;
+}
+
+.social-icons img {
+    height: 100px;
+    padding: 10px;
+}
