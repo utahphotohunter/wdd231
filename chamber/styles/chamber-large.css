@@ -1,0 +1,167 @@
+/* css stylesheet for chamber of commerce desktop website */
+
+
+/* variables */
+
+:root {
+    --primary-color: #D4BDAC;
+    --background-color: #FFF1DB;
+    --accent-color: #f4e2c2;
+    --text-color: #536493;
+}
+
+@media (min-width: 820px) {
+
+/* utilities */
+
+.btn {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+
+
+/* global */
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* header and footer*/
+
+/* header */
+
+@media (min-width: 1000px) {
+    header {
+        padding: 0 100px;
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-and-moon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-content img {
+    height: 100%;
+    margin-right: 15px;
+}
+
+.desktop-menu-items {
+    display: flex;
+    margin: 0 25px;
+}
+
+.desktop-menu-items li {
+    padding: 20px;
+    width: 125px;
+    text-align: center;
+}
+
+.desktop-menu-items li:hover {
+    background-color: var(--accent-color);
+}
+
+.desktop-menu-items li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.chamber-address {
+    width: 33%;
+}
+
+.social-icons {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.credit {
+    width: 33%;
+    margin-left: 75px;
+}
+
+
+/* page content */
+
+.showcase {
+    height: 350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.showcase img {
+    top: -200px;
+}
+
+
+/* current info */
+
+.current-info {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    /* padding: 30px 0; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    justify-items: center;
+}
+
+.current-info h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.card {
+    height: 80%;
+    width: 90%;
+}
+
+
+/* business preview */
+
+.business-preview {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.simple-card {
+    width: 90%;
+    margin: 0 10px;
+}
+
+
+}

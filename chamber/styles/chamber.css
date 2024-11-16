@@ -1,4 +1,4 @@
-/* css stylesheet for chamber of commerce website */
+/* css stylesheet for chamber of commerce mobile website */
 
 
 /* variables */
@@ -240,7 +240,10 @@ footer {
 }
 
 .social-icons {
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 40%;
 }
 
 .social-icons img {
