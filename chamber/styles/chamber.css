@@ -83,6 +83,10 @@ a:hover {
     background-color: var(--accent-color) !important;
 }
 
+.hide-y {
+    overflow-y: hidden;
+}
+
 
 
 
@@ -198,6 +202,7 @@ header {
     align-items: center;
     transform: translateX(100%);
     transition: ease 0.3s;
+    z-index: 1;
 }
 
 .mobile-menu-nav.active {
