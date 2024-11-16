@@ -342,7 +342,23 @@ footer {
     padding-top: 0;
 }
 
-.simple-card {
+.view-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.view-icons button {
+    margin: 10px;
+}
+
+.view-icons button img {
+    height: 40px;
+}
+
+/* grid view */
+
+.grid-view .simple-card {
     width: 100%;;
     border-radius: 10px;
     height: 200px;
@@ -350,27 +366,96 @@ footer {
     overflow: hidden;
 }
 
-.simple-header {
+.grid-view .simple-header {
     background-color: var(--accent-color);
     border-bottom: solid 2px var(--text-color);
     border-radius: 10px 10px 0 0;
     text-align: center;
 }
 
-.simple-info {
+.grid-view .simple-header .details {
+    display: none;
+}
+
+.grid-view .simple-info {
     background-color: var(--background-color);
     border-radius: 0 0 10px 10px;
     display: flex;
     height: 100%;
 }
 
-.simple-info img {
+.grid-view .simple-info img {
     height: 55%;
 }
 
-.simple-text ul li {
+.grid-view .simple-text ul li {
     padding: 5px;
 }
 
+/* list view */
 
+.list-view .simple-card {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
 
+.list-view .simple-header {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--text-color);
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-view .simple-header .tag-line {
+    display: none;
+}
+
+.list-view .simple-info {
+    display: none;
+}
+
+/*list view detail expansion */
+
+.details {
+    color: var(--text-color);
+}
+
+.details:hover {
+    text-decoration: underline;
+    background-color: var(--background-color);
+}
+
+.list-view .grid-detail {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.list-view .grid-detail .simple-header {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--text-color);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.list-view .grid-detail .simple-info{
+    background-color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    height: 100%;
+}
+
+.list-view .grid-detail .simple-info img {
+    height: 55%;
+}
+
+.list-view .grid-detail .simple-text ul li {
+    padding: 5px;
+}

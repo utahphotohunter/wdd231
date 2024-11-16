@@ -127,7 +127,6 @@ footer {
     width: 90%;
     height: 500px;
     margin: 0 auto;
-    /* padding: 30px 0; */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 5fr;
@@ -149,19 +148,142 @@ footer {
     width: 90%;
 }
 
+/* current weather */
+
+@media (max-width: 1160px) {
+    .current-weather img {
+        display: none;
+    }
+}
+
 
 /* business preview */
 
 .business-preview {
     display: flex;
+    flex-direction: column;
     width: 90%;
     margin: 0 auto;
 }
 
-.simple-card {
-    width: 90%;
-    margin: 0 10px;
+.view-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
+.view-icons button {
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.view-icons button img {
+    height: 40px;
+}
+
+/* grid view */
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-view .simple-card {
+    width: 90%;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.grid-view .simple-header {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--text-color);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.grid-view .simple-header .details {
+    display: none;
+}
+
+.grid-view .simple-info {
+    background-color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    height: 100%;
+}
+
+.grid-view .simple-info img {
+    height: 55%;
+}
+
+.grid-view .simple-text ul li {
+    padding: 5px;
+}
+
+/* list view */
+
+.list-view .simple-card {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.list-view .simple-header {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--text-color);
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-view .simple-header .tag-line {
+    display: none;
+}
+
+.list-view .simple-info {
+    display: none;
+}
+
+/*list view detail expansion */
+
+.details {
+    padding: 15px;
+}
+
+.list-view .grid-detail {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.list-view .grid-detail .simple-header {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--text-color);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.list-view .grid-detail .simple-info {
+    background-color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    height: 100%;
+}
+
+.list-view .grid-detail .simple-info img {
+    height: 55%;
+}
+
+.list-view .grid-detail .simple-text ul li {
+    padding: 5px;
+}
 
 }
