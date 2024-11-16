@@ -120,6 +120,14 @@ footer {
     top: -200px;
 }
 
+.showcase #small-balloon {
+    display: none;
+}
+
+.showcase #large-balloon {
+    display: inline;
+}
+
 
 /* current info */
 
