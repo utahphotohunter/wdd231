@@ -57,7 +57,8 @@
          <div class="mobile-menu">
             <div class="mobile-menu-content container">
                 <div class="logo-content">
-                    <img src="images/logo-icon.webp" alt="Timbuktu city logo">
+                    <img src="images/logo-icon-square.webp" alt="Timbuktu City Logo" loading="lazy" class="square-logo">
+                    <img src="images/logo-icon.webp" alt="Timbuktu city logo" loading="lazy" class="wide-logo">
                     <div class="logo-title container">
                         <p class="primary-text">Timbuktu</p>
                         <p>Chamber of Commerce</p>
@@ -92,30 +93,36 @@
         </section>
         <section class="container current-info">
             <h1 class="primary-text">Home</h1>
-            <article class="container card">
+            <article class="card events">
                 <h2 class="card-header secondary-text">Events</h2>
                 <div class="container">
                     <!-- events -->
                 </div>
             </article>
-            <article class="container card">
+            <article class="card current-weather">
                 <h2 class="card-header secondary-text">Current Weather</h2>
-                <div>
+                <div class="current-weather-content container">
                     <img src="images/weather-icon.png" alt="partly cloudy icon">
-                </div>
-                <div>
-                    <!-- weather data -->
+                    <ul>
+                        <li id="temp"><span class="bold">75</span>&deg;</li>
+                        <li id="conditions">Partly Cloudy</li>
+                        <li id="high">High: <span>85</span>&deg;</li>
+                        <li id="low">Low: <span>52</span>&deg;</li>
+                        <li id="humidity">Humidity: <span>34</span>%</li>
+                        <li id="sunrise">Sunrise: <span>7:30am</span></li>
+                        <li id="sunset">Sunset: 9:59pm</li>
+                    </ul>
                 </div>
             </article>
-            <article class="container card">
+            <article class="card forecast">
                 <h2 class="card-header secondary-text">Weather Forecast</h2>
                 <div>
                     <!-- forecast -->
                 </div>
             </article>
         </section>
-        <section class="container business-preview">
-            <article class="container simple-card">
+        <section class=" container business-preview">
+            <article class="simple-card">
                 <div class="container simple-header">
                     <h3 class="secondary-text">Greaves</h3>
                     <p>Tag Line</p>
@@ -123,13 +130,15 @@
                 <div class="container simple-info">
                     <img src="images/greaves.webp" alt="greaves storefront" class="simple-image">
                     <div class="container simple-text">
-                        <p><span class="bold">Email: </span>info@gmail.com</p>
-                        <p><span class="bold">Phone: </span>123-456-7890</p>
-                        <p><span class="bold">URL: </span>mybusiness.com</p>
+                        <ul>
+                            <li><span class="bold">Email: </span>info@gmail.com</li>
+                            <li><span class="bold">Phone: </span>123-456-7890</li>
+                            <li><span class="bold">URL: </span>mybusiness.com</li>
+                        </ul>
                     </div>
                 </div>
             </article>
-            <article class="container simple-card">
+            <article class="simple-card">
                 <div class="container simple-header">
                     <h3 class="secondary-text">Coffee Shop</h3>
                     <p>Tag Line</p>
@@ -137,13 +146,15 @@
                 <div class="container simple-info">
                     <img src="images/coffee-shop.webp" alt="coffee shop storefront" class="simple-image">
                     <div class="container simple-text">
-                        <p><span class="bold">Email: </span>info@gmail.com</p>
-                        <p><span class="bold">Phone: </span>123-456-7890</p>
-                        <p><span class="bold">URL: </span>mybusiness.com</p>
+                        <ul>
+                            <li><span class="bold">Email: </span>info@gmail.com</li>
+                            <li><span class="bold">Phone: </span>123-456-7890</li>
+                            <li><span class="bold">URL: </span>mybusiness.com</li>
+                        </ul>
                     </div>
                 </div>
             </article>
-            <article class="container simple-card">
+            <article class="simple-card">
                 <div class="container simple-header">
                     <h3 class="secondary-text">Papi's Pizza</h3>
                     <p>Tag Line</p>
@@ -151,9 +162,11 @@
                 <div class="container simple-info">
                     <img src="images/pizza.webp" alt="papi's pizza storefront" class="simple-image">
                     <div class="container simple-text">
-                        <p><span class="bold">Email: </span>info@gmail.com</p>
-                        <p><span class="bold">Phone: </span>123-456-7890</p>
-                        <p><span class="bold">URL: </span>mybusiness.com</p>
+                        <ul>
+                            <li><span class="bold">Email: </span>info@gmail.com</li>
+                            <li><span class="bold">Phone: </span>123-456-7890</li>
+                            <li><span class="bold">URL: </span>mybusiness.com</li>
+                        </ul>
                     </div>
                 </div>
             </article>
