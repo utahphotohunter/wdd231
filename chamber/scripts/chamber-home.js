@@ -26,7 +26,6 @@ async function logData() {
     const response = await fetch(url);
     const data = await response.json();
     displayBusinesses(data.businesses);
-    console.log(data.businesses);
 }
 
 logData();
@@ -34,6 +33,7 @@ logData();
 
 function displayBusinesses(data) {
     data.forEach(business => {
+        
         // make card
         const card = document.createElement("article");
         card.setAttribute("id", business.id);
@@ -59,6 +59,7 @@ function displayBusinesses(data) {
         // make details button
         const detailsButton = document.createElement("button");
         detailsButton.classList.add("details", "btn");
+        detailsButton.setAttribute("id", `${business.id}-details`);
         detailsButton.textContent = "Details";
         cardHeader.appendChild(detailsButton);
 
@@ -113,3 +114,4 @@ function displayBusinesses(data) {
         cards.appendChild(card);
     });
 }
+
