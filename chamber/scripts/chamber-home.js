@@ -33,7 +33,7 @@ logData();
 
 function displayBusinesses(data) {
     data.forEach(business => {
-        
+
         // make card
         const card = document.createElement("article");
         card.setAttribute("id", business.id);
@@ -112,6 +112,11 @@ function displayBusinesses(data) {
         infoList.appendChild(businessUrl);
 
         cards.appendChild(card);
+
+        // make card expand on detail button click
+        detailsButton.addEventListener("click", function() {
+            card.classList.toggle("grid-detail");
+        });
     });
 }
 
