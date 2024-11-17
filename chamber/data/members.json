@@ -2,63 +2,77 @@
     "businesses": [
         {
             "name": "Greaves",
+            "tagLine": "We Sell Stuff",
             "address": "309 N 150 S",
             "phoneNumber": "(773) 809-5534",
             "url": "greaves.timbuktu.com",
+            "email" : "contact@greaves.com", 
             "img": "images/greaves.webp",
             "membership": 1,
             "id": "greaves"
         },
         {
             "name": "Coffee Shop",
+            "tagLine": "Wake Up Your Morning",
             "address": "899 S Grandview Blvd",
             "phoneNumber": "(773) 310-1072",
             "url": "coffeeshop.timbuktu.com",
+            "email" : "contact@coffeeshop.com", 
             "img": "images/coffee-shop.webp",
             "membership": 3,
             "id": "coffee-shop"
         },
         {
             "name": "Papi's Pizza",
+            "tagLine": "We Don't Do Small",
             "address": "625 W Freedom Ave",
             "phoneNumber": "(773) 222-6574",
             "url": "papispizza.timbuktu.com",
+            "email" : "contact@papispizza.com", 
             "img": "images/pizza.webp",
             "membership": 2,
             "id": "papi-pizza"
         },
         {
             "name": "Pheobe's Bakery",
+            "tagLine": "Diabetes is a Myth",
             "address": "627 W Mountain Ave",
             "phoneNumber": "(773) 221-6364",
             "url": "pheobesbakery.timbuktu.com",
+            "email" : "contact@pheobesbakery.com", 
             "img": "images/bakery.webp",
             "membership": 1,
             "id": "pheobe-bakery"
         },
         {
             "name": "Shipley Do-Nuts",
+            "tagLine": "Holy Foods",
             "address": "785 N 800 E",
             "phoneNumber": "(773) 351-7874",
             "url": "shipleydonuts.timbuktu.com",
+            "email" : "contact@shipleydonuts.com", 
             "img": "images/donuts.webp",
             "membership": 1,
             "id": "shipley-donuts"
         },
         {
             "name": "Empire Apparel",
+            "tagLine": "Live Like Royalty",
             "address": "801 N Empire DR",
             "phoneNumber": "(773) 563-9875",
             "url": "empireapparel.timbuktu.com",
+            "email" : "contact@empireapparel.com", 
             "img": "images/clothing.webp",
             "membership": 1,
             "id": "empire-apparel"
         },
         {
             "name": "Simple Grocery",
+            "tagLine": "Fill The Cart",
             "address": "952 W Freedom Ave",
             "phoneNumber": "(773) 215-6587",
             "url": "simplegrocery.timbuktu.com",
+            "email" : "contact@simplegrocery.com", 
             "img": "images/grocery.webp",
             "membership": 3,
             "id": "simple-grocery"
