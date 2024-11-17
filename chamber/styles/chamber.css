@@ -367,7 +367,7 @@ footer {
 /* grid view */
 
 .grid-view .simple-card {
-    width: 100%;;
+    width: 100%;
     border-radius: 10px;
     height: 200px;
     margin-bottom: 20px;
@@ -398,6 +398,7 @@ footer {
 
 .grid-view .simple-text ul li {
     padding: 5px;
+    font-size: 0.8rem;
 }
 
 /* list view */

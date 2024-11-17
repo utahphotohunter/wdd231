@@ -25,9 +25,8 @@ const cards = document.getElementById("view-selector");
 async function logData() {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(businesses);
     displayBusinesses(data.businesses);
-
+    console.log(data.businesses);
 }
 
 logData();
@@ -66,6 +65,7 @@ function displayBusinesses(data) {
         // make business info div
         const businessInfo = document.createElement("div");
         businessInfo.classList.add("container", "simple-info");
+        card.appendChild(businessInfo);
 
         // make business image
         const businessImage = document.createElement("img");
