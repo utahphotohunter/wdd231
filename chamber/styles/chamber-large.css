@@ -82,6 +82,7 @@ body {
 .desktop-menu-items li a {
     font-size: 1.2rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 
 
