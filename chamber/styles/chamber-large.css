@@ -6,6 +6,7 @@
 :root {
     --primary-color: #D4BDAC;
     --background-color: #FFF1DB;
+    --background-color-clear: #FFF1DB80;
     --accent-color: #f4e2c2;
     --text-color: #536493;
 }
@@ -74,7 +75,8 @@ body {
 }
 
 .desktop-menu-items li:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
+    border-radius: 15px;
 }
 
 .desktop-menu-items li a {
@@ -108,7 +110,16 @@ footer {
 }
 
 
+
+
+
+
+
+
+
 /* page content */
+
+/* home page */
 
 .showcase {
     height: 350px;
@@ -165,9 +176,18 @@ footer {
 }
 
 
-/* business preview */
 
-.business-preview {
+
+
+
+
+
+
+/* directory */
+
+/* businesses */
+
+.businesses {
     display: flex;
     flex-direction: column;
     width: 90%;

@@ -6,6 +6,7 @@
 :root {
     --primary-color: #D4BDAC;
     --background-color: #FFF1DB;
+    --background-color-clear: #FFF1DB80;
     --accent-color: #f4e2c2;
     --text-color: #536493;
 }
@@ -68,6 +69,21 @@ p {
     font-weight: 400;
 }
 
+.header-div {
+    padding: 25px;
+    padding-left: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-div h1 {
+    background-color: var(--background-color-clear);
+    width: 40%;
+    min-width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+}
+
 .secondary-text {
     font-size: 1.5rem;
     color: var(--text-color);
@@ -80,7 +96,8 @@ a:hover {
 }
 
 .current {
-    background-color: var(--accent-color) !important;
+    background-color: var(--background-color-clear) !important;
+    border-radius: 15px;
 }
 
 .hide-y {
@@ -221,12 +238,12 @@ header {
     padding: 10px;
     width: 100%;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--background-color-clear);
     border-radius: 5px;
 }
 
 .mobile-menu-nav ul li:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
 }
 
 .mobile-menu-nav a {
@@ -257,7 +274,8 @@ footer {
 
 /* page content */
 
-/* main */
+
+/* Home Page */
 
 /* showcase */
 
@@ -344,9 +362,21 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* Directory */
+
 /* business previews */
 
-.business-preview {
+.businesses {
     padding-top: 0;
 }
 
