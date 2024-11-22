@@ -1,5 +1,5 @@
 // api url
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=f9e50fde67107e72150b984b2ef85827";
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=";
 let iconUrl = "https://api.openweathermap.org/img/w/"
 
 // html elements
