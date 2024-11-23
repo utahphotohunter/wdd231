@@ -21,7 +21,6 @@
 }
 
 
-
 /* global */
 
 body {
@@ -111,13 +110,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
 /* page content */
 
 /* home page */
@@ -145,26 +137,15 @@ footer {
 
 .current-info {
     width: 90%;
-    height: 500px;
+    height: fit-content;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr;
     justify-items: center;
 }
 
-.current-info h1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width: 100%;
-    text-align: left;
-    margin-top: 25px;
-}
-
 .card {
-    height: 80%;
+    height: 100%;
     width: 90%;
 }
 

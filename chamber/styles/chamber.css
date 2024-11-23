@@ -307,9 +307,15 @@ footer {
 
 /* current info */
 
+.current-info {
+    color: var(--text-color);
+    text-align: center;
+}
+
 .card {
     background-color: var(--background-color);
     margin: 10px 0;
+    width: 100%;
 }
 
 .card-header {
@@ -322,15 +328,14 @@ footer {
 /* events */
 
 .events {
-    height: 250px;
     width: 100%;
+    min-height: 200px;
 }
 
 
 /* current weather */
 
 .current-weather {
-    height: 300px;
     overflow: hidden;
 }
 
@@ -358,9 +363,18 @@ footer {
 /* forecast */
 
 .forecast {
-    height: 250px;
+    height: fit-content;
 }
 
+.forecast-content {
+    border: var(--text-color) 1px solid;
+    margin: 5px;
+}
+
+.forecast-content img {
+    display: flex;
+    justify-self: center;
+}
 
 
 
