@@ -1,6 +1,6 @@
 // api url
-const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=40.28&lon=-111.68&units=imperial&appid=f9e50fde67107e72150b984b2ef85827";
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.64&units=imperial&appid=f9e50fde67107e72150b984b2ef85827";
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=16.76&lon=-3.00&units=imperial&appid=f9e50fde67107e72150b984b2ef85827";
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=16.76&lon=-3.00&units=imperial&appid=f9e50fde67107e72150b984b2ef85827";
 const iconUrl = "https://api.openweathermap.org/img/w/";
 
 async function fetchApi(url) {
