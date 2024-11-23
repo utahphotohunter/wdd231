@@ -149,12 +149,20 @@ footer {
     width: 90%;
 }
 
+
+
 /* current weather */
 
-@media (max-width: 1160px) {
-    .current-weather img {
-        display: none;
-    }
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.current-weather-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 

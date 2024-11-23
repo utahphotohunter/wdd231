@@ -341,13 +341,19 @@ footer {
 
 .current-weather-content {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     margin-top: 25px;
 }
 
 .current-weather-content img {
-    height: 30%;
+    border-radius: 10px;
+    background-color: rgb(181, 181, 242);
+    width: 90%;
+    max-width: 75px;
+    margin: 10px;
 }
 
 .current-weather-content ul {
@@ -372,8 +378,11 @@ footer {
 }
 
 .forecast-content img {
-    display: flex;
-    justify-self: center;
+    border-radius: 10px;
+    background-color: rgb(181, 181, 242);
+    width: 90%;
+    max-width: 75px;
+    margin: 10px;
 }
 
 
