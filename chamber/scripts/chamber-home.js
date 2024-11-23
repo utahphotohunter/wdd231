@@ -74,6 +74,7 @@ function displayForecast(forecast) {
         weatherIcon.classList.add("forecast-icon");
         weatherIcon.setAttribute("src", `${iconUrl}${dataSet.weather[0].icon}.png`);
         weatherIcon.setAttribute("alt", dataSet.weather[0].description);
+        weatherIcon.setAttribute("loading", "lazy");
         weatherInfo.appendChild(weatherIcon);
 
         const weatherList = document.createElement("ul");
@@ -111,6 +112,7 @@ function displayCurrent(data) {
     currentWeatherIcon.classList.add("current-weather-icon");
     currentWeatherIcon.setAttribute("src", `${iconUrl}${data.weather[0].icon}@2x.png`);
     currentWeatherIcon.setAttribute("alt", data.weather[0].description);
+    currentWeatherIcon.setAttribute("loading", "lazy");
     currentWeatherContent.appendChild(currentWeatherIcon);
 
     const currentWeatherInfo = document.createElement("ul");
