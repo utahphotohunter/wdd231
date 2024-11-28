@@ -93,65 +93,70 @@
         <div class="container header-div">
             <h1 class="primary-text">Join</h1>
         </div>
-        <h2 class="primary-text container">Membership Application</h2>
-        <form action="thankyou.html" method="GET">
-            <section class="container">
-                <div class="form-group">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-            </section>
-            <section class="container">
-                <div class="form-group">
-                    <label for="title">Organizational Title:</label>
-                    <input type="text" id="title" name="title">
-                </div>
-                <div class="form-group">
-                    <label for="organization-name">Organization Name:</label>
-                    <input type="text" id="organization-name" name="organization-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="business-description">Business Description:</label>
-                    <textarea id="business-description" name="business-description" rows="4"></textarea>
-                </div>
-            </section>
-            <section class="container">
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
-                </div>
-            </section>
-            <section class="container">
-                <div class="form-group">
-                    <label for="membership-level">Membership Level:</label>
-                    <select id="membership-level" name="membership-level" required>
-                        <option value="" disabled selected>Select one</option>
-                        <option value="basic">NP</option>
-                        <option value="basic">Bronze</option>
-                        <option value="premium">Silver</option>
-                        <option value="enterprise">Gold</option>
-                    </select>
-                </div>
-                <input type="hidden" name="timestamp" id="timestamp">
-            </section>
-            <button class="btn" type="submit">Submit</button>
-        </form>
-        <aside>
-            <section class="membership-card container">
-                <h3>NP</h3>
-                <img src="" alt="">
-                <button class="btn">Details</button>
-            </section>
-        </aside>
-
+        <section class="join-content">
+            <h2 class="primary-text container">Membership Application</h2>
+            <form class="membership-form" action="thankyou.html" method="GET">
+                <section class="form-section container">
+                    <h3>Individual Info</h3>
+                    <div class="form-group container">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                    </div>
+                    <div class="form-group container">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                    </div>
+                </section>
+                <section class="form-section container">
+                    <h3>Business Info</h3>
+                    <div class="form-group container">
+                        <label for="title">Organizational Title:</label>
+                        <input type="text" id="title" name="title" placeholder="Joe's Business LLC">
+                    </div>
+                    <div class="form-group container">
+                        <label for="organization-name">Organization Name:</label>
+                        <input type="text" id="organization-name" name="organization-name" placeholder="Joe's Business" required>
+                    </div>
+                    <div class="form-group container">
+                        <label for="business-description">Business Description:</label>
+                        <textarea id="business-description" name="business-description" rows="4" placeholder="What Joe does"></textarea>
+                    </div>
+                </section>
+                <section class="form-section container">
+                    <h3>Contact Info</h3>
+                    <div class="form-group container">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="joe@joesbuisiness.com" required>
+                    </div>
+                    <div class="form-group container">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                    </div>
+                </section>
+                <section class="form-section container">
+                    <h3>Membership Info</h3>
+                    <div class="form-group container">
+                        <label for="membership-level">Membership Level:</label>
+                        <select id="membership-level" name="membership-level" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="basic">NP</option>
+                            <option value="basic">Bronze</option>
+                            <option value="premium">Silver</option>
+                            <option value="enterprise">Gold</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </section>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+            <aside class="membership-cards">
+                <section class="membership-card container">
+                    <h3>NP</h3>
+                    <img src="images/np.png" alt="hand holding a heart">
+                    <button class="btn">Details</button>
+                </section>
+            </aside>
+        </section>
     </main>
     <footer>
         <article class="container chamber-address">

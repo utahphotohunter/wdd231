@@ -74,7 +74,7 @@ body {
 }
 
 .desktop-menu-items li:hover {
-    background-color: var(--accent-color) !important;
+    background-color: var(--background-color-clear);
     border-radius: 15px;
 }
 

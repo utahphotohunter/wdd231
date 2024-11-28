@@ -50,12 +50,15 @@ p {
     background-color: var(--background-color);
     padding: 10px;
     font-size: 1rem;
+    font-weight: 400;
     border: none;
     border-radius: 10px;
+    color: var(--text-color);
 }
 
 .btn:hover {
     background-color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .btn a {
@@ -96,7 +99,7 @@ a:hover {
 }
 
 .current {
-    background-color: var(--background-color-clear) !important;
+    background-color: var(--background-color) !important;
     border-radius: 15px;
 }
 
@@ -386,15 +389,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Directory */
 
 /* business previews */
@@ -521,3 +515,86 @@ footer {
 .list-view .grid-detail .simple-text ul li {
     padding: 5px;
 }
+
+
+
+
+/* join */
+
+/* page layout */
+
+.join-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.join-content h2 {
+    text-align: center;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text-color);
+    border-top: 1px solid var(--text-color);
+    padding-bottom: 20px;
+}
+
+.form-section {
+    border-top: var(--text-color) solid 1px;
+}
+
+.form-section h3 {
+    color: var(--text-color);
+    text-decoration: underline;
+    font-weight: 350;
+}
+
+.membership-form label {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    background-color: var(--background-color-clear);
+    padding: 5px;
+    padding-left: 10px;
+    width: 40%;
+    border-radius: 10px;
+
+}
+
+.membership-form section {
+    /* border: green solid 2px; */
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* border: blue solid 1px; */
+}
+
+.form-group input,
+.form-group select {
+    height: 2.3rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 0 5px;
+    border-radius: 8px;
+    border: var(--text-color) solid 2px;
+    width: 90%;
+    align-self: center;
+}
+
+.membership-form button {
+    width: 40%;
+}
+
