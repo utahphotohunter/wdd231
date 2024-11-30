@@ -545,6 +545,7 @@ footer {
     border: 2px solid var(--text-color);
     border-top: 1px solid var(--text-color);
     padding-bottom: 20px;
+    background-color: var(--background-color-clear);
 }
 
 .form-section {
@@ -602,6 +603,17 @@ footer {
 
 /* membership cards */
 
+@keyframes color-change {
+    0% {background-color: var(--background-color-clear);
+        color: var(--text-color);}
+    50% {background-color: var(--accent-color-2);
+        color: #ffffff;}
+    100% {
+            background-color: var(--background-color-clear);
+            color: var(--text-color);
+        }
+}
+
 .membership-cards {
     margin-bottom: 25px;
 }
@@ -619,11 +631,7 @@ footer {
     border-left: var(--text-color) 1px solid;
     border-right: var(--text-color) 1px solid;
     background-color: var(--background-color-clear);
-}
-
-.membership-card:hover {
-    background-color: var(--accent-color-2);
-    color: #ffffff;
+    animation: color-change 10s ease 0s infinite;
 }
 
 .membership-card .btn {
@@ -639,4 +647,22 @@ footer {
 
 .membership-card img {
     width: 150px;
+}
+
+.business-modal {
+    margin: auto;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.business-modal .modal-close {
+    background-color: var(--accent-color-2);
+    color: white;
+    text-shadow: var(--text-color) 1px 1px;
+    margin: 20px;
+}
+
+.business-modal .modal-close:hover {
+    background-color: var(--accent-color-2);
 }
