@@ -5,13 +5,13 @@
     <!-- display metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Application for the city of Timbuktu.">
+    <meta name="description" content="Chamber of Commerce application completion thank you page.">
     <meta name="author" content="Mitchel Hunter">
-    <title>Timbuku Chamber of Commerce Sign Up</title>
+    <title>Timbuku Chamber of Commerce Form Confirmation</title>
     <!-- social media metas -->
-    <meta property="og:title" content="Timbuku Chamber of Commerce Sign Up">
+    <meta property="og:title" content="Timbuku Chamber of Commerce Form Confirmation">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Chamber of Commerce Application for the city of Timbuktu.">
+    <meta property="og:description" content="Chamber of Commerce application completion thank you page.">
     <meta property="og:image" content="https://utahphotohunter.github.io/wdd231/chamber/images/balloon.webp">
     <meta property="og:url" content="https://utahphotohunter.github.io/wdd231/chamber/index.html">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <!-- js scripts -->
     <script src="scripts/chamber-core.js" defer></script>
-    <script src="scripts/chamber-join.js" defer></script>
 </head>
 
 <body id="body">
@@ -48,7 +47,7 @@
                     <ul class="desktop-menu-items">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="directory.html">Directory</a></li>
-                        <li class="current"><a href="join.html">Join</a></li>
+                        <li><a href="#">Join</a></li>
                         <li><a href="#">Discover</a></li>
                     </ul>
                 </nav>
@@ -83,7 +82,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li class="current"><a href="join.html">Join</a></li>
+                    <li><a href="#">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
             </nav>
@@ -91,65 +90,10 @@
     </header>
     <main>
         <div class="container header-div">
-            <h1 class="primary-text">Join</h1>
+            <h1 class="primary-text">Thank You!</h1>
         </div>
-        <section class="join-content">
-            <form class="membership-form" action="thankyou.html" method="GET">
-                <h2 class="primary-text container">Membership Application</h2>
-                <section class="form-section container">
-                    <h3>Individual Info</h3>
-                    <div class="form-group container">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="John" required>
-                    </div>
-                    <div class="form-group container">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
-                    </div>
-                </section>
-                <section class="form-section container">
-                    <h3>Business Info</h3>
-                    <div class="form-group container">
-                        <label for="title">Organizational Title:</label>
-                        <input type="text" id="title" name="title" placeholder="Joe's Business LLC">
-                    </div>
-                    <div class="form-group container">
-                        <label for="organization-name">Organization Name:</label>
-                        <input type="text" id="organization-name" name="organization-name" placeholder="Joe's Business" required>
-                    </div>
-                    <div class="form-group container">
-                        <label for="business-description">Business Description:</label>
-                        <textarea id="business-description" name="business-description" rows="4" placeholder="What Joe does"></textarea>
-                    </div>
-                </section>
-                <section class="form-section container">
-                    <h3>Contact Info</h3>
-                    <div class="form-group container">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="joe@joesbuisiness.com" required>
-                    </div>
-                    <div class="form-group container">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
-                    </div>
-                </section>
-                <section class="form-section container">
-                    <h3>Membership Info</h3>
-                    <div class="form-group container">
-                        <label for="membership-level">Membership Level:</label>
-                        <select id="membership-level" name="membership-level" required>
-                            <option value="" disabled selected>Select one</option>
-                            <option value="gold">Gold</option>
-                            <option value="silver">Silver</option>
-                            <option value="bronze">Bronze</option>
-                            <option value="np">NP</option>
-                        </select>
-                    </div>
-                    <input type="hidden" name="timestamp" id="timestamp">
-                </section>
-                <button class="btn" type="submit">Send Application</button>
-            </form>
-            <aside class="membership-cards"></aside>
+        <section class="thank-you container">
+            <p>Your Application has been successfully submitted. We will reach out to you if we need any additional information. <br>You can expect to receive a decision within the next 5 business days.</p>
         </section>
     </main>
     <footer>

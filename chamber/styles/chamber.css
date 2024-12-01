@@ -26,6 +26,7 @@ body, html {
 
 body {
     position: relative;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -667,4 +668,20 @@ footer {
 
 .business-modal .modal-close:hover {
     background-color: var(--accent-color-2);
+}
+
+/* thank you page */
+
+.thank-you {
+    text-align: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-clear);
+    border-radius: 25px;
+    margin: 20px;
+    margin-top: 0;
+    color: var(--text-color);
+    line-height: 1.7rem;
 }

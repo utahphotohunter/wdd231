@@ -1,5 +1,7 @@
 const cards = document.querySelector(".membership-cards");
 const membershipLevels = "https://utahphotohunter.github.io/wdd231/chamber/data/membership-levels.json";
+const timeStamp = document.getElementById("timestamp");
+
 
 async function main() {
     const memberships = await getData(membershipLevels);
@@ -78,10 +80,8 @@ function displayMemberships(data) {
         cards.appendChild(card);
     });
 
-
-
-
-
-
-
+// timestamp of form submission
+let lastModified = document.lastModified;
+let modificationDate = new Date(lastModified);
+timeStamp.value = modificationDate;
 }
