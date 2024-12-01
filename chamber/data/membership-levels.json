@@ -4,25 +4,25 @@
             "name": "Gold",
             "image": "gold.png",
             "imageAlt": "gold medal",
-            "dialog": "This level of membership offers premium access to all the Chamber of Commerce has to offer. For $300/month, the benefits include company spotlights on the chamber's website, 5 paid-for meals at monthly chamber meetings, large print business name on monthly news letters, full spread ad in yearly mailouts, access to city mailing and email lists, access to the all the Business Central facilities including AI marketing and financial simulators, access to private workspaces, private post-office box, and discounts at participating office supplies stores."
+            "dialog": "Premium access to all the Chamber of Commerce has to offer. For $300/month, benefits include company spotlights on the chamber website, 5 paid-for meals at chamber meetings, large print business name on news letters, full spread ad in mailouts, mailing and email lists, access to all Business Central facilities including AI marketing and financial simulators, private workspaces, private post-office box, and discounts at participating office supplies stores."
         },
         {
             "name": "Silver",
             "image": "silver.png",
             "imageAlt": "silver medal",
-            "dialog": "This level of membership offers access to most benefits the Chamber of Commerce has to offer. For $150/month, the benefits include company spotlights on the chamber's website, 2 paid-for meals at monthly chamber meetings, large print business name on monthly news letters, half spread ad in yearly mailouts, access to city mailing and email lists, access to the Business Central facilities including access to shared workspaces, private post-office box, and discounts at participating office supplies stores."
+            "dialog": "Access to most benefits the Chamber of Commerce has to offer. For $150/month, benefits include company spotlights on the chamber website, 2 paid-for meals at chamber meetings, large print business name on news letters, half spread ad incmailouts, mailing and email lists, Business Central facilities including shared workspaces, private post-office box, and discounts at participating office supplies stores."
         },
         {
             "name": "Bronze",
             "image": "bronze.png",
             "imageAlt": "bronze medal",
-            "dialog": "This level of membership offers access to benefits from the Chamber of Commerce. For $50/month, the benefits include company spotlights on the chamber's website, 1 paid-for meal at monthly chamber meetings, business name on monthly news letters, an ad in yearly mailouts, access to city mailing and email lists, access to the Business Central facilities including access to shared workspaces, and discounts at participating office supplies stores."
+            "dialog": "Access to benefits from the Chamber of Commerce. For $50/month, the benefits include company spotlights on the chamber website, 1 paid-for meal at chamber meetings, business name on news letters, an ad in mailouts, mailing and email lists Business Central facilities including shared workspaces, and discounts at participating office supplies stores."
         },
         {
             "name": "NP",
             "image": "np.png",
             "imageAlt": "hand holding a heart",
-            "dialog": "This level of membership is reserved for businesses registered as non-profit organizations. There is no cost associated with this membership. The benefits include company spotlights on the chamber's website, 1 paid-for meal at monthly chamber meetings, business name on monthly news letters, an ad in yearly mailouts, access to city email lists, access to the Business Central facilities including access to shared workspaces, and discounts at participating office supplies stores."
+            "dialog": "TReserved for businesses registered as non-profit organizations. There is no cost with this membership. The benefits include company spotlights on the chamber website, 1 paid-for meal at chamber meetings, business name on news letters, an ad in mailouts, access to city email lists, Business Central facilities including shared workspaces, and discounts at participating office supplies stores."
         }
     ]
 }
