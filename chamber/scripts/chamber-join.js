@@ -1,9 +1,9 @@
-const dialog = document.querySelector(".business-modal");
+// const dialog = document.querySelector(".business-modal");
 
-dialog.showModal();
+// dialog.showModal();
 
-const modalCloseButton = document.querySelector(".modal-close");
+// const modalCloseButton = document.querySelector(".modal-close");
 
-modalCloseButton.addEventListener("click", function () {
-    dialog.removeAttribute("open");
-})
+// modalCloseButton.addEventListener("click", function () {
+//     dialog.close();
+// })

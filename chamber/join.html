@@ -94,8 +94,8 @@
             <h1 class="primary-text">Join</h1>
         </div>
         <section class="join-content">
-            <h2 class="primary-text container">Membership Application</h2>
             <form class="membership-form" action="thankyou.html" method="GET">
+                <h2 class="primary-text container">Membership Application</h2>
                 <section class="form-section container">
                     <h3>Individual Info</h3>
                     <div class="form-group container">
@@ -139,10 +139,10 @@
                         <label for="membership-level">Membership Level:</label>
                         <select id="membership-level" name="membership-level" required>
                             <option value="" disabled selected>Select one</option>
-                            <option value="basic">NP</option>
-                            <option value="basic">Bronze</option>
-                            <option value="premium">Silver</option>
-                            <option value="enterprise">Gold</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="np">NP</option>
                         </select>
                     </div>
                     <input type="hidden" name="timestamp" id="timestamp">
@@ -151,23 +151,8 @@
             </form>
             <aside class="membership-cards">
                 <section class="membership-card container">
-                    <h3>NP</h3>
-                    <img src="images/np.png" alt="hand holding a heart">
-                    <button class="btn">Details</button>
-                    <dialog class="container business-modal">
-                        <h3>Non-Profit</h3>
-                        <img src="images/np.png" alt="hand holding a heart">
-                        <p>This level of membership is reserved for businesses registered as non profits. There is <span class="bold">no
-                                cost</span> associated with this membership level. <span class="bold">Benefits include</span> company
-                            spotlights, 1 paid-for meal at monthly chamber meetings, business name on monthly newsletters, half-spread ad in
-                            yearly mailouts, and access to
-                            city mailing list.</p>
-                            <button class="btn modal-close">Close</button>
-                    </dialog>
-                </section>
-                <section class="membership-card container">
-                    <h3>Bronze</h3>
-                    <img src="images/bronze.png" alt="hand holding a heart">
+                    <h3>Gold</h3>
+                    <img src="images/gold.png" alt="hand holding a heart">
                     <button class="btn">Details</button>
                 </section>
                 <section class="membership-card container">
@@ -176,9 +161,24 @@
                     <button class="btn">Details</button>
                 </section>
                 <section class="membership-card container">
-                    <h3>Gold</h3>
-                    <img src="images/gold.png" alt="hand holding a heart">
+                    <h3>Bronze</h3>
+                    <img src="images/bronze.png" alt="hand holding a heart">
                     <button class="btn">Details</button>
+                </section>
+                <section class="membership-card container">
+                    <h3>NP</h3>
+                    <img src="images/np.png" alt="hand holding a heart">
+                    <button class="btn">Details</button>
+                    <dialog class="container business-modal">
+                        <h3>Non-Profit</h3>
+                        <img src="images/np.png" alt="hand holding a heart">
+                        <p>This level of membership is reserved for businesses registered as non profits. There is no
+                            cost associated with this membership level. Benefits include company
+                            spotlights, 1 paid-for meal at monthly chamber meetings, business name on monthly newsletters, half-spread ad in
+                            yearly mailouts, and access to
+                            city mailing list.</p>
+                            <button class="btn modal-close">Close</button>
+                    </dialog>
                 </section>
             </aside>
         </section>

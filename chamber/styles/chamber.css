@@ -59,7 +59,8 @@ p {
 }
 
 .btn:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-2);
+    color: white;
     text-decoration: underline;
 }
 
@@ -523,8 +524,6 @@ footer {
 
 /* join */
 
-/* page layout */
-
 .join-content {
     width: 100%;
     display: flex;
@@ -546,6 +545,7 @@ footer {
     border-top: 1px solid var(--text-color);
     padding-bottom: 20px;
     background-color: var(--background-color-clear);
+    height: fit-content;
 }
 
 .form-section {
@@ -556,6 +556,7 @@ footer {
     color: var(--text-color);
     text-decoration: underline;
     font-weight: 350;
+    padding: 10px;
 }
 
 .membership-form label {
@@ -643,6 +644,7 @@ footer {
 
 .membership-card .btn:hover {
     background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .membership-card img {
