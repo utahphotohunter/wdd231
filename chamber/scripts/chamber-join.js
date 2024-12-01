@@ -3,7 +3,6 @@ const membershipLevels = "https://utahphotohunter.github.io/wdd231/chamber/data/
 
 async function main() {
     const memberships = await getData(membershipLevels);
-    console.log(memberships);
     displayMemberships(memberships);
 }
 
