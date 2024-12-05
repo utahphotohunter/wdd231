@@ -1,0 +1,104 @@
+/* variables */
+
+:root {
+    --main-background: #de8e4c;
+    --header-background: #5da5d2;
+    --text-color: #1e2025;
+    --text-shadow: #ffffff90;
+}
+
+
+/* global adjustments */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2rem;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    background-color: var(--main-background);
+}
+
+header,
+footer {
+    max-height: fit-content;
+    padding: 20px 10px;
+    background-color: var(--header-background);
+}
+
+.header,
+.footer {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow) 1px 1px;
+}
+
+h1 {
+    font-size: xx-large;
+    padding: 10px;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: larger;
+}
+
+p {
+    color: var(--text-color);
+    font-size: large;
+}
+
+li {
+    color: var(--text-color);
+    font-size: large;
+    text-align: left;
+}
+
+
+/* utilities */
+
+.container {
+    padding: 10px;
+}
+
+
+/* homepage */
+
+.section {
+    border: solid 2px white;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layouts {
+    display: flex;
+}
+
+.wireframe {
+    max-width: 100%;
+}
+
+
+

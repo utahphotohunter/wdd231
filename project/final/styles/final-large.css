@@ -1,0 +1,90 @@
+@media (min-width: 821px) {
+
+/* global */
+
+body {
+    max-width: 1200px;
+}
+
+/* navbar */
+
+.desktop-menu {
+    display: flex;
+}
+
+.desktop-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.desktop-menu ul li {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.mobile-menu,
+.mobile-menu-icon {
+    display: none;
+}
+
+/* main */
+
+main {
+    display: flex;
+}
+
+/* home page content */
+
+/* actions */
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    margin: 10px;
+}
+
+.action-card {
+    height: 200px;
+}
+
+.action-card .btn {
+    margin-top: 30px;
+}
+
+
+/* trails */
+
+.hikes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+.hike {
+    width: 95%;
+}
+
+.hike img {
+    width: 90%;
+}
+
+
+/* hike suggestion form */
+
+.hike-suggestion {
+    padding: 25px;
+}
+
+.hike-input {
+    width: 85%;
+}
+
+.hike-input label {
+    font-size: x-large;
+}
+   
+}
