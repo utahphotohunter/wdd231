@@ -388,4 +388,41 @@ footer {
 .business-modal .modal-close:hover {
     text-shadow: none;
 }
+
+
+/* discover */
+
+.discover-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* sidebar */
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 20px;
+}
+
+
+/* local interests */
+
+.local-interests {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 80%;
+}
+
+.local-interests img {
+    transition: transform 0.5s ease;
+}
+
+
+.local-interests img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
 }

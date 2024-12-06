@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <!-- js scripts -->
     <script src="scripts/chamber-core.js" defer></script>
-    <script src="scripts/chamber-directory.js" defer></script>
 </head>
 
 <body id="body">
@@ -90,52 +89,71 @@
         </div>
     </header>
     <main class="discover-content">
-        <aside class="sidebar">
-            <article class="stats">
-                <h2>City Stats</h2>
-                <ul>
-                    <li><span class="bold">Population: </span>16,000</li>
-                    <li><span class="bold">Area: </span>60 square miles</li>
-                    <li><span class="bold">Founded: </span>1739</li>
-                    <li><span class="bold">Businesses: </span>135</li>
-                    <li><span class="bold">Schools: </span>5</li>
-                    <li><span class="bold">Annual Festivals: </span>8</li>
-                </ul>
+        <aside class="sidebar container">
+            <article class="stats discover-card">
+                <h2 class="discover-card-header">City Stats</h2>
+                <div class="container">
+                    <ul>
+                        <li><span class="bold">Population: </span>16,000</li>
+                        <li><span class="bold">Area: </span>60 square miles</li>
+                        <li><span class="bold">Founded: </span>1739</li>
+                        <li><span class="bold">Businesses: </span>135</li>
+                        <li><span class="bold">Schools: </span>5</li>
+                        <li><span class="bold">Annual Festivals: </span>8</li>
+                    </ul>
+                </div>
             </article>
-            <article class="upcoming">
-                <h2>Upcoming Christmas Festival</h2>
-                <img src="images/christmas-party.webp" alt="City Christmas Festival">
-                <p>Join us for a magical Christmas Festival the whole family will love! Experience the wonder of the season with festive
-                lights, live holiday music, delightful food and drink, and fun activities for kids like ornament-making and photos with
-                Santa. Wander through our twinkling holiday market for unique gifts and treats. Create cherished memories and celebrate
-                the joy of Christmas together — don’t miss out!</p>
+            <article class="upcoming discover-card">
+                <h2 class="discover-card-header">Upcoming Christmas Festival</h2>
+                <div class="container">
+                    <img src="images/christmas-party.webp" alt="City Christmas Festival" loading="lazy">
+                    <p>Join us for a magical Christmas Festival the whole family will love! Experience the wonder of the season with festive
+                        lights, live holiday music, delightful food and drink, and fun activities for kids like ornament-making and photos
+                        with
+                        Santa. Wander through our twinkling holiday market for unique gifts and treats. Create cherished memories and
+                        celebrate
+                        the joy of Christmas together — don’t miss out!</p>
+                </div>
             </article>
-            <article class="calander"></article>
+            <article class="calander discover-card">
+                <h2 class="discover-card-header">City Calander</h2>
+                <div class="container">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&showPrint=0&showNav=0&showTz=0&title=Timbuktu%20City%20Calander&showCalendars=0&showTabs=0"
+                        style="border-width:0" width="500" height="500" frameborder="0" scrolling="no" class="large-calander"></iframe>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&showPrint=0&showNav=0&showTz=0&title=Timbuktu%20City%20Calander&showCalendars=0&showTabs=0"
+                        style="border-width:0" width="400" height="400" frameborder="0" scrolling="no" class="medium-calander"></iframe>
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&showPrint=0&showNav=0&showTz=0&title=Timbuktu%20City%20Calander&showCalendars=0&showTabs=0"
+                            style="border-width:0" width="340" height="400" frameborder="0" scrolling="no" class="small-calander"></iframe>
+                </div>
+            </article>
         </aside>
-        <section class="local-interests">
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+        <section class="local-interests container">
+            <figure class="container discover-card">
+                <img src="images/scooter-rentals.webp" alt="couple riding scooter" loading="lazy">
+                <figcaption>Explore the countryside on a moped scooter.</figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="container discover-card">
+                <img src="images/shopping-mall.webp" alt="shopping mall" loading="lazy">
+                <figcaption>Do your holdiay shopping at the City Mall.</figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="container discover-card">
+                <img src="images/mountain-canoe.webp" alt="canoe in river" loading="lazy">
+                <figcaption>Chase the adrenaline with mountain canoeing.</figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="container discover-card">
+                <img src="images/balloon-rides.webp" alt="kids in hot air balloon" loading="lazy">
+                <figcaption>Reach new hights with a family hot air ballon ride.</figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="container discover-card">
+                <img src="images/golfing.webp" alt="man golfing" loading="lazy">
+                <figcaption>Unwind at the country club golf course.</figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="container discover-card">
+                <img src="images/live-music.webp" alt="band playing music" loading="lazy">
+                <figcaption>Enjoy the evening with live music.</figcaption>
             </figure>
         </section>
     </main>
