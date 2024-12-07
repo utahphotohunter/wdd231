@@ -26,5 +26,5 @@ if (lastVisit == null) {
 
 displayWelcome();
 
-// sets local storeage with current time for next visit
+// sets localStorage with current unix time for next visit
 localStorage.setItem(lastVisit, currentEpoch);

@@ -51,8 +51,7 @@ body {
     height: 100%;
 }
 
-.menu-and-moon {
-    height: 100%;
+.moon-menu {
     display: flex;
     justify-content: center;
     align-items: center;

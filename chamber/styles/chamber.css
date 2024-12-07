@@ -175,8 +175,6 @@ header {
     align-items: start;
 }
 
-
-
 .moon-toggle-icons {
     display: flex;
     height: 70%;
@@ -193,6 +191,7 @@ header {
 
 .moon img {
     height: 60%;
+    max-width: 50px;
 }
 
 .mobile-menu-toggle {
@@ -290,6 +289,7 @@ footer {
     height: 200px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 }
 
 .showcase #large-balloon {
@@ -311,7 +311,6 @@ footer {
     margin: 15px;
 }
 
-
 /* current info */
 
 .current-info {
@@ -324,6 +323,8 @@ footer {
     margin: 10px 0;
     width: 100%;
     border-radius: 10px;
+    min-height: 200px;
+    padding-bottom: 10px;
 }
 
 .card-header {
@@ -333,53 +334,27 @@ footer {
     border-radius: 10px;
 }
 
-
-/* events */
-
-.events {
-    width: 100%;
-    min-height: 200px;
-}
-
-
 /* current weather */
-
-.current-weather {
-    overflow: hidden;
-}
 
 .current-weather-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
     margin-top: 25px;
 }
 
 .current-weather-content img {
     border-radius: 10px;
     background-color: rgb(181, 181, 242);
-    width: 90%;
     max-width: 75px;
     margin: 10px;
-}
-
-.current-weather-content ul {
-    margin-left: 20px;
-    font-size: 1rem;
 }
 
 .current-weather-content ul li {
     padding: 3px;
 }
 
-
 /* forecast */
-
-.forecast {
-    height: fit-content;
-}
 
 .forecast-content {
     border: var(--text-color) 1px solid;
@@ -406,7 +381,6 @@ footer {
 .view-icons {
     display: flex;
     justify-content: end;
-    align-items: center;
 }
 
 .view-icons button {
