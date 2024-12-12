@@ -269,14 +269,22 @@ footer {
     justify-content: center;
     position: absolute;
     width: 75%;
+    max-width: 480px;
+    max-height: 85vh;
     margin: 30px auto 0 auto;
     border: var(--primary-color) 3px solid;
     padding: 15px;
     background-color: var(--accent-color);
 }
 
+.details h3 {
+    font-size: x-large;
+    text-shadow: var(--text-shadow) 1px 1px;
+}
+
 .details img {
     width: 70%;
+    max-width: 195px;
     padding: 10px;
 }
 

@@ -7,7 +7,6 @@ toggle.addEventListener("click", function () {
 });
 
 // desktop nav buttons
-
 const allBtn = document.querySelector("#all-desktop");
 const longBtn = document.querySelector("#long-desktop");
 const hardBtn = document.querySelector("#hard-desktop");
@@ -15,7 +14,6 @@ const quietBtn = document.querySelector("#quiet-desktop");
 const beautifulBtn = document.querySelector("#beautiful-desktop");
 
 // mobile nav buttons
-
 const allBtnMobile = document.querySelector("#all-mobile");
 const longBtnMobile = document.querySelector("#long-mobile");
 const hardBtnMobile = document.querySelector("#hard-mobile");
@@ -23,7 +21,6 @@ const quietBtnMobile = document.querySelector("#quiet-mobile");
 const beautifulBtnMobile = document.querySelector("#beautiful-mobile");
 
 // hike card array
-
 const hikes = [
     {
         name: "Heaven's Doorstep",
@@ -31,7 +28,7 @@ const hikes = [
         difficulty: "medium",
         crowds: "high",
         views: "good",
-        imgage: "images/sunset-hill.webp"
+        image: "images/sunset-hill.webp"
     },
     {
         name: "Crystal Lake",
@@ -39,7 +36,7 @@ const hikes = [
         difficulty: "easy",
         crowds: "medium",
         views: "good",
-        imgage: "images/sunset-lake.webp"
+        image: "images/sunset-lake.webp"
     },
     {
         name: "Valley Overlook",
@@ -47,7 +44,7 @@ const hikes = [
         difficulty: "medium",
         crowds: "high",
         views: "good",
-        imgage: "images/sunset-mountains.webp"
+        image: "images/sunset-mountains.webp"
     },
     {
         name: "Monument Boardwalk",
@@ -55,7 +52,7 @@ const hikes = [
         difficulty: "easy",
         crowds: "high",
         views: "poor",
-        imgage: "images/boardwalk.webp"
+        image: "images/boardwalk.webp"
     },
     {
         name: "Devil's Basement",
@@ -63,7 +60,7 @@ const hikes = [
         difficulty: "hard",
         crowds: "low",
         views: "good",
-        imgage: "images/desert-spires.webp"
+        image: "images/desert-spires.webp"
     },
     {
         name: "Jurassic Rapids",
@@ -71,7 +68,7 @@ const hikes = [
         difficulty: "hard",
         crowds: "medium",
         views: "medium",
-        imgage: "images/forest-stream.webp"
+        image: "images/forest-stream.webp"
     },
     {
         name: "Lonely Mountain",
@@ -79,7 +76,7 @@ const hikes = [
         difficulty: "hard",
         crowds: "low",
         views: "good",
-        imgage: "images/lone-mountain.webp"
+        image: "images/lone-mountain.webp"
     },
     {
         name: "Hidden Spire",
@@ -87,7 +84,7 @@ const hikes = [
         difficulty: "easy",
         crowds: "low",
         views: "medium",
-        imgage: "images/mountain-pass.webp"
+        image: "images/mountain-pass.webp"
     },
     {
         name: "Floating Cabin",
@@ -95,12 +92,11 @@ const hikes = [
         difficulty: "hard",
         crowds: "low",
         views: "good",
-        imgage: "images/river-cabin.webp"
+        image: "images/river-cabin.webp"
     }
 ];
 
 // create hike card
-
 function createHikeCard(list) {
     list.forEach(hike => {
         let card = document.createElement("div");
@@ -109,13 +105,13 @@ function createHikeCard(list) {
         let img = document.createElement("img");
         let stats = document.createElement("div");
         stats.classList.add("stats");
-        let lengthP = document.createElement("p")
+        let lengthP = document.createElement("p");
         let difficultyP = document.createElement("p");
         let crowdsP = document.createElement("p");
         let viewsP = document.createElement("p");
 
         hikeName.textContent = hike.name;
-        img.setAttribute("src", hike.imgage);
+        img.setAttribute("src", hike.image);
         img.setAttribute("alt", `${hike.name} hike`);
         img.setAttribute("loading", "lazy");
         lengthP.innerHTML = `<span class="bold">Length:</span> ${hike.length}mi`;
@@ -154,52 +150,63 @@ allBtnMobile.addEventListener("click", () => {
 // load long hikes desktop
 longBtn.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.length > 4))
+    createHikeCard(hikes.filter(hike => hike.length > 4));
 });
 
 // load long hikes mobile
 longBtnMobile.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
     mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.length > 4))
+    createHikeCard(hikes.filter(hike => hike.length > 4));
 });
 
 // load hard hikes desktop
 hardBtn.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"))
+    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"));
 });
 
 // load hard hikes mobile
 hardBtnMobile.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
     mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"))
+    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"));
 });
 
 // load quiet hikes desktop
 quietBtn.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.crowds == "low"))
+    createHikeCard(hikes.filter(hike => hike.crowds == "low"));
 });
 
 // load quiet hikes mobile
 quietBtnMobile.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
     mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.crowds == "low"))
+    createHikeCard(hikes.filter(hike => hike.crowds == "low"));
 });
 
 // load beautiful hikes desktop
 beautifulBtn.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.views == "good"))
+    createHikeCard(hikes.filter(hike => hike.views == "good"));
 });
 
 // load beautiful hikes mobile
 beautifulBtnMobile.addEventListener("click", () => {
     document.querySelector(".hikes").innerHTML = "";
     mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.views == "good"))
-
+    createHikeCard(hikes.filter(hike => hike.views == "good"));
 });
+
+
+// add a dialog that populates 10 seconds after the page loads
+// make sure to remove the old dialog css
+const dialog = document.createElement("dialog");
+dialog.classList.add("details");
+
+const detailsHeader = document.createElement("h3");
+detailsHeader.textContent = "Welcome!";
+dialog.appendChild(detailsHeader);
+
+

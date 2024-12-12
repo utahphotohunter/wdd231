@@ -73,6 +73,17 @@ main {
 }
 
 
+/* details modal */
+
+.details img {
+    max-width: 70%;
+}
+
+.details p {
+    display: inline;
+}
+
+
 /* hike suggestion form */
 
 .hike-suggestion {
