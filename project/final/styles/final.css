@@ -5,6 +5,7 @@
 :root {
     --primary-color: #5da5d2;
     --secondary-color: #de8e4c;
+    --accent-color: #eba56c;
     --clear-white: #ffffff90;
     --text-color: #1e2025;
     --text-shadow: #ffffff90;
@@ -257,6 +258,48 @@ footer {
     padding: 5px;
     font-size: 0.9rem;
     background-color: var(--hover-color);
+}
+
+/* details modal */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 75%;
+    margin: 30px auto 0 auto;
+    border: var(--primary-color) 3px solid;
+    padding: 15px;
+    background-color: var(--accent-color);
+}
+
+.details img {
+    width: 70%;
+    padding: 10px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.details p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: medium;
+    background-color: var(--hover-color);
+}
+
+.details button {
+    width: 50%;
 }
 
 
