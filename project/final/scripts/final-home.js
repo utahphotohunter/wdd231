@@ -21,80 +21,85 @@ const quietBtnMobile = document.querySelector("#quiet-mobile");
 const beautifulBtnMobile = document.querySelector("#beautiful-mobile");
 
 // hike card array
-const hikes = [
-    {
-        name: "Heaven's Doorstep",
-        length: 3.5,
-        difficulty: "medium",
-        crowds: "high",
-        views: "good",
-        image: "images/sunset-hill.webp"
-    },
-    {
-        name: "Crystal Lake",
-        length: 3,
-        difficulty: "easy",
-        crowds: "medium",
-        views: "good",
-        image: "images/sunset-lake.webp"
-    },
-    {
-        name: "Valley Overlook",
-        length: 1,
-        difficulty: "medium",
-        crowds: "high",
-        views: "good",
-        image: "images/sunset-mountains.webp"
-    },
-    {
-        name: "Monument Boardwalk",
-        length: 10,
-        difficulty: "easy",
-        crowds: "high",
-        views: "poor",
-        image: "images/boardwalk.webp"
-    },
-    {
-        name: "Devil's Basement",
-        length: 8.7,
-        difficulty: "hard",
-        crowds: "low",
-        views: "good",
-        image: "images/desert-spires.webp"
-    },
-    {
-        name: "Jurassic Rapids",
-        length: 1.8,
-        difficulty: "hard",
-        crowds: "medium",
-        views: "medium",
-        image: "images/forest-stream.webp"
-    },
-    {
-        name: "Lonely Mountain",
-        length: 18,
-        difficulty: "hard",
-        crowds: "low",
-        views: "good",
-        image: "images/lone-mountain.webp"
-    },
-    {
-        name: "Hidden Spire",
-        length: 6.4,
-        difficulty: "easy",
-        crowds: "low",
-        views: "medium",
-        image: "images/mountain-pass.webp"
-    },
-    {
-        name: "Floating Cabin",
-        length: 3.1,
-        difficulty: "hard",
-        crowds: "low",
-        views: "good",
-        image: "images/river-cabin.webp"
-    }
-];
+// const hikes = [
+//     {
+//         name: "Heaven's Doorstep",
+//         length: 3.5,
+//         difficulty: "medium",
+//         crowds: "high",
+//         views: "good",
+//         image: "images/sunset-hill.webp"
+//     },
+//     {
+//         name: "Crystal Lake",
+//         length: 3,
+//         difficulty: "easy",
+//         crowds: "medium",
+//         views: "good",
+//         image: "images/sunset-lake.webp"
+//     },
+//     {
+//         name: "Valley Overlook",
+//         length: 1,
+//         difficulty: "medium",
+//         crowds: "high",
+//         views: "good",
+//         image: "images/sunset-mountains.webp"
+//     },
+//     {
+//         name: "Monument Boardwalk",
+//         length: 10,
+//         difficulty: "easy",
+//         crowds: "high",
+//         views: "poor",
+//         image: "images/boardwalk.webp"
+//     },
+//     {
+//         name: "Devil's Basement",
+//         length: 8.7,
+//         difficulty: "hard",
+//         crowds: "low",
+//         views: "good",
+//         image: "images/desert-spires.webp"
+//     },
+//     {
+//         name: "Jurassic Rapids",
+//         length: 1.8,
+//         difficulty: "hard",
+//         crowds: "medium",
+//         views: "medium",
+//         image: "images/forest-stream.webp"
+//     },
+//     {
+//         name: "Lonely Mountain",
+//         length: 18,
+//         difficulty: "hard",
+//         crowds: "low",
+//         views: "good",
+//         image: "images/lone-mountain.webp"
+//     },
+//     {
+//         name: "Hidden Spire",
+//         length: 6.4,
+//         difficulty: "easy",
+//         crowds: "low",
+//         views: "medium",
+//         image: "images/mountain-pass.webp"
+//     },
+//     {
+//         name: "Floating Cabin",
+//         length: 3.1,
+//         difficulty: "hard",
+//         crowds: "low",
+//         views: "good",
+//         image: "images/river-cabin.webp"
+//     }
+// ];
+const url = ""
+
+function logData() {
+
+}
 
 // create hike card
 function createHikeCard(list) {
@@ -198,15 +203,3 @@ beautifulBtnMobile.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
     createHikeCard(hikes.filter(hike => hike.views == "good"));
 });
-
-
-// add a dialog that populates 10 seconds after the page loads
-// make sure to remove the old dialog css
-const dialog = document.createElement("dialog");
-dialog.classList.add("details");
-
-const detailsHeader = document.createElement("h3");
-detailsHeader.textContent = "Welcome!";
-dialog.appendChild(detailsHeader);
-
-

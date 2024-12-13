@@ -271,7 +271,7 @@ footer {
     width: 75%;
     max-width: 480px;
     max-height: 85vh;
-    margin: 30px auto 0 auto;
+    margin: 130px auto 0 auto;
     border: var(--primary-color) 3px solid;
     padding: 15px;
     background-color: var(--accent-color);
@@ -288,12 +288,6 @@ footer {
     padding: 10px;
 }
 
-.details-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 10px;
-}
-
 .details p {
     text-align: center;
     display: flex;
@@ -301,7 +295,8 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    margin: 5px 10px;
+    margin: 15px;
+    line-height: 1.5rem;
     font-size: medium;
     background-color: var(--hover-color);
 }
@@ -309,7 +304,6 @@ footer {
 .details button {
     width: 50%;
 }
-
 
 /* hike suggestion form */
 
