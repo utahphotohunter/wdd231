@@ -6,7 +6,10 @@
         "difficulty": "medium",
         "crowds": "high",
         "views": "good",
-        "image": "images/sunset-hill.webp"
+        "image": "images/sunset-hill.webp",
+        "imageCreator": "Photo by Quang Nguyen Vinh",
+        "creatorLink": "https://www.pexels.com/@quang-nguyen-vinh-222549/",
+        "imageLink": "https://www.pexels.com/photo/house-surrounded-by-rice-field-2132118/"
     },
     {
         "name": "Crystal Lake",
@@ -14,7 +17,10 @@
         "difficulty": "easy",
         "crowds": "medium",
         "views": "good",
-        "image": "images/sunset-lake.webp"
+        "image": "images/sunset-lake.webp",
+        "imageCreator": "Photo by Pixabay",
+        "creatorLink": "https://www.pexels.com/@pixabay/",
+        "imageLink": "https://www.pexels.com/photo/dock-under-cloudy-sky-in-front-of-mountain-206359/"
     },
     {
         "name": "Valley Overlook",
@@ -22,7 +28,10 @@
         "difficulty": "medium",
         "crowds": "high",
         "views": "good",
-        "image": "images/sunset-mountains.webp"
+        "image": "images/sunset-mountains.webp",
+        "imageCreator": "Photo by Simon Berger",
+        "creatorLink": "https://www.pexels.com/@8moments/",
+        "imageLink": "https://www.pexels.com/photo/silhouette-of-mountains-1323550/"
     },
     {
         "name": "Monument Boardwalk",
@@ -30,7 +39,10 @@
         "difficulty": "easy",
         "crowds": "high",
         "views": "poor",
-        "image": "images/boardwalk.webp"
+        "image": "images/boardwalk.webp",
+        "imageCreator": "Photo by Tyler Lastovich",
+        "creatorLink": "https://www.pexels.com/@lastly/",
+        "imageLink": "https://www.pexels.com/photo/photo-of-a-man-walking-on-boardwalk-808466/"
     },
     {
         "name": "Devil's Basement",
@@ -38,7 +50,10 @@
         "difficulty": "hard",
         "crowds": "low",
         "views": "good",
-        "image": "images/desert-spires.webp"
+        "image": "images/desert-spires.webp",
+        "imageCreator": "Photo by Pixabay",
+        "creatorLink": "https://www.pexels.com/@pixabay/",
+        "imageLink": "https://www.pexels.com/photo/grand-canyon-414136/"
     },
     {
         "name": "Jurassic Rapids",
@@ -46,7 +61,10 @@
         "difficulty": "hard",
         "crowds": "medium",
         "views": "medium",
-        "image": "images/forest-stream.webp"
+        "image": "images/forest-stream.webp",
+        "imageCreator": "Photo by Francesco Ungaro",
+        "creatorLink": "https://www.pexels.com/@francesco-ungaro/",
+        "imageLink": "https://www.pexels.com/photo/landscape-photo-of-falls-464327/"
     },
     {
         "name": "Lonely Mountain",
@@ -54,7 +72,10 @@
         "difficulty": "hard",
         "crowds": "low",
         "views": "good",
-        "image": "images/lone-mountain.webp"
+        "image": "images/lone-mountain.webp",
+        "imageCreator": "Photo by Pixabay",
+        "creatorLink": "https://www.pexels.com/@pixabay/",
+        "imageLink": "https://www.pexels.com/photo/gray-and-brown-mountain-417173/"
     },
     {
         "name": "Hidden Spire",
@@ -62,7 +83,11 @@
         "difficulty": "easy",
         "crowds": "low",
         "views": "medium",
-        "image": "images/mountain-pass.webp"
+        "image": "images/mountain-pass.webp",
+        "imageCreator": "Photo by eberhard grossgasteiger",
+        "creatorLink": "https://www.pexels.com/@eberhardgross/",
+        "imageLink": "https://www.pexels.com/photo/grey-mountain-near-trees-640783/"
+        
     },
     {
         "name": "Floating Cabin",
@@ -70,7 +95,10 @@
         "difficulty": "hard",
         "crowds": "low",
         "views": "good",
-        "image": "images/river-cabin.webp"
+        "image": "images/river-cabin.webp",
+        "imageCreator": "Photo by Tobi",
+        "creatorLink": "https://www.pexels.com/@pripicart/",
+        "imageLink": "https://www.pexels.com/photo/brown-wooden-house-in-lake-3353245/"
     }
 ]
 }
