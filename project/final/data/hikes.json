@@ -121,6 +121,28 @@
         "imageCreator": "Photo by Ton Souza",
         "creatorLink": "https://www.pexels.com/@ton-souza/",
         "imageLink": "https://www.pexels.com/photo/desert-valley-in-mountains-4596905/"
+    },
+    {
+        "name": "The Giant's Lair",
+        "length": 5.9,
+        "difficulty": "hard",
+        "crowds": "high",
+        "views": "good",
+        "image": "images/forest-rail.webp",
+        "imageCreator": "Photo by Pille  Kirsi",
+        "creatorLink": "https://www.pexels.com/@pille-kirsi-222198/",
+        "imageLink": "https://www.pexels.com/photo/empty-wooden-pathway-in-forest-1009355/"
+    },
+    {
+        "name": "Pools of Reverence",
+        "length": 12.5,
+        "difficulty": "hard",
+        "crowds": "medium",
+        "views": "good",
+        "image": "images/mountain-springs.webp",
+        "imageCreator": "Photo by Baptiste Valthier",
+        "creatorLink": "https://www.pexels.com/@baptiste-valthier-193914/",
+        "imageLink": "https://www.pexels.com/photo/people-hiking-803217/"
     }
 ]
 }
