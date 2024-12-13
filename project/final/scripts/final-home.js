@@ -20,86 +20,7 @@ const hardBtnMobile = document.querySelector("#hard-mobile");
 const quietBtnMobile = document.querySelector("#quiet-mobile");
 const beautifulBtnMobile = document.querySelector("#beautiful-mobile");
 
-// hike card array
-// const hikes = [
-//     {
-//         name: "Heaven's Doorstep",
-//         length: 3.5,
-//         difficulty: "medium",
-//         crowds: "high",
-//         views: "good",
-//         image: "images/sunset-hill.webp"
-//     },
-//     {
-//         name: "Crystal Lake",
-//         length: 3,
-//         difficulty: "easy",
-//         crowds: "medium",
-//         views: "good",
-//         image: "images/sunset-lake.webp"
-//     },
-//     {
-//         name: "Valley Overlook",
-//         length: 1,
-//         difficulty: "medium",
-//         crowds: "high",
-//         views: "good",
-//         image: "images/sunset-mountains.webp"
-//     },
-//     {
-//         name: "Monument Boardwalk",
-//         length: 10,
-//         difficulty: "easy",
-//         crowds: "high",
-//         views: "poor",
-//         image: "images/boardwalk.webp"
-//     },
-//     {
-//         name: "Devil's Basement",
-//         length: 8.7,
-//         difficulty: "hard",
-//         crowds: "low",
-//         views: "good",
-//         image: "images/desert-spires.webp"
-//     },
-//     {
-//         name: "Jurassic Rapids",
-//         length: 1.8,
-//         difficulty: "hard",
-//         crowds: "medium",
-//         views: "medium",
-//         image: "images/forest-stream.webp"
-//     },
-//     {
-//         name: "Lonely Mountain",
-//         length: 18,
-//         difficulty: "hard",
-//         crowds: "low",
-//         views: "good",
-//         image: "images/lone-mountain.webp"
-//     },
-//     {
-//         name: "Hidden Spire",
-//         length: 6.4,
-//         difficulty: "easy",
-//         crowds: "low",
-//         views: "medium",
-//         image: "images/mountain-pass.webp"
-//     },
-//     {
-//         name: "Floating Cabin",
-//         length: 3.1,
-//         difficulty: "hard",
-//         crowds: "low",
-//         views: "good",
-//         image: "images/river-cabin.webp"
-//     }
-// ];
-const url = ""
-
-function logData() {
-
-}
+const url = "https://utahphotohunter.github.io/wdd231/project/final/data/hikes.json";
 
 // create hike card
 function createHikeCard(list) {
@@ -136,70 +57,78 @@ function createHikeCard(list) {
     });
 }
 
-// list loaded on page open
-createHikeCard(hikes);
+// fetch json file and populate page
+async function logData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data.hikes);
 
-// load all hikes desktop 
-allBtn.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes);
-});
+    // populate all hikes at page load
+    createHikeCard(data.hikes);
 
-// load all hikes mobile
-allBtnMobile.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    mobileMenu.classList.toggle("active");
-    createHikeCard(hikes);
-});
+    // load all hikes desktop 
+    allBtn.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        createHikeCard(data.hikes);
+    });
+    // load all hikes mobile
+    allBtnMobile.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        mobileMenu.classList.toggle("active");
+        createHikeCard(data.hikes);
+    });
 
-// load long hikes desktop
-longBtn.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.length > 4));
-});
+    // load long hikes desktop
+    longBtn.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        createHikeCard(data.hikes.filter(hike => hike.length > 4));
+    });
 
-// load long hikes mobile
-longBtnMobile.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.length > 4));
-});
+    // load long hikes mobile
+    longBtnMobile.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        mobileMenu.classList.toggle("active");
+        createHikeCard(data.hikes.filter(hike => hike.length > 4));
+    });
 
-// load hard hikes desktop
-hardBtn.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"));
-});
+    // load hard hikes desktop
+    hardBtn.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        createHikeCard(data.hikes.filter(hike => hike.difficulty == "hard"));
+    });
 
-// load hard hikes mobile
-hardBtnMobile.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.difficulty == "hard"));
-});
+    // load hard hikes mobile
+    hardBtnMobile.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        mobileMenu.classList.toggle("active");
+        createHikeCard(data.hikes.filter(hike => hike.difficulty == "hard"));
+    });
 
-// load quiet hikes desktop
-quietBtn.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.crowds == "low"));
-});
+    // load quiet hikes desktop
+    quietBtn.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        createHikeCard(data.hikes.filter(hike => hike.crowds == "low"));
+    });
 
-// load quiet hikes mobile
-quietBtnMobile.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.crowds == "low"));
-});
+    // load quiet hikes mobile
+    quietBtnMobile.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        mobileMenu.classList.toggle("active");
+        createHikeCard(data.hikes.filter(hike => hike.crowds == "low"));
+    });
 
-// load beautiful hikes desktop
-beautifulBtn.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    createHikeCard(hikes.filter(hike => hike.views == "good"));
-});
+    // load beautiful hikes desktop
+    beautifulBtn.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        createHikeCard(data.hikes.filter(hike => hike.views == "good"));
+    });
 
-// load beautiful hikes mobile
-beautifulBtnMobile.addEventListener("click", () => {
-    document.querySelector(".hikes").innerHTML = "";
-    mobileMenu.classList.toggle("active");
-    createHikeCard(hikes.filter(hike => hike.views == "good"));
-});
+    // load beautiful hikes mobile
+    beautifulBtnMobile.addEventListener("click", () => {
+        document.querySelector(".hikes").innerHTML = "";
+        mobileMenu.classList.toggle("active");
+        createHikeCard(data.hikes.filter(hike => hike.views == "good"));
+    });
+}
+
+logData();
