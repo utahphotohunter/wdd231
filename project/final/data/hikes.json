@@ -143,6 +143,28 @@
         "imageCreator": "Photo by Baptiste Valthier",
         "creatorLink": "https://www.pexels.com/@baptiste-valthier-193914/",
         "imageLink": "https://www.pexels.com/photo/people-hiking-803217/"
+    },
+    {
+        "name": "Bridges of Valhalla",
+        "length": 1.2,
+        "difficulty": "easy",
+        "crowds": "medium",
+        "views": "medium",
+        "image": "images/bridges.webp",
+        "imageCreator": "Photo by Lorenza Magnaghi",
+        "creatorLink": "https://www.pexels.com/@lorenza-magnaghi-660554185/",
+        "imageLink": "https://www.pexels.com/photo/rustic-mountain-path-with-wooden-bridge-29713469/"
+    },
+    {
+        "name": "Dinosaur Lane",
+        "length": 5.0,
+        "difficulty": "medium",
+        "crowds": "low",
+        "views": "good",
+        "image": "images/dinosaur-lane.webp",
+        "imageCreator": "Photo by Miroslav Glasa",
+        "creatorLink": "https://www.pexels.com/@miroslav-glasa-2147620119/",
+        "imageLink": "https://www.pexels.com/photo/stunning-autumn-view-of-vysoke-tatry-mountains-29688981/"
     }
 ]
 }
