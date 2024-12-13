@@ -61,7 +61,6 @@ function createHikeCard(list) {
 async function logData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.hikes);
 
     // populate all hikes at page load
     createHikeCard(data.hikes);
