@@ -99,6 +99,28 @@
         "imageCreator": "Photo by Tobi",
         "creatorLink": "https://www.pexels.com/@pripicart/",
         "imageLink": "https://www.pexels.com/photo/brown-wooden-house-in-lake-3353245/"
+    },
+    {
+        "name": "Farmer's River",
+        "length": 2.2,
+        "difficulty": "easy",
+        "crowds": "low",
+        "views": "medium",
+        "image": "images/farmer-river.webp",
+        "imageCreator": "Photo by eberhard grossgasteiger",
+        "creatorLink": "https://www.pexels.com/@eberhardgross/",
+        "imageLink": "https://www.pexels.com/photo/person-showing-gray-mountain-534164/"
+    },
+    {
+        "name": "Deadhead Bed",
+        "length": 5.9,
+        "difficulty": "hard",
+        "crowds": "low",
+        "views": "poor",
+        "image": "images/deadhead-bed.webp",
+        "imageCreator": "Photo by Ton Souza",
+        "creatorLink": "https://www.pexels.com/@ton-souza/",
+        "imageLink": "https://www.pexels.com/photo/desert-valley-in-mountains-4596905/"
     }
 ]
 }
